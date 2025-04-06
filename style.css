@@ -5,32 +5,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap');
 
 
+/* style.css */
+
+/* Remove body padding-top if it exists */
 body {
-    font-family: 'Raleway', 'Poppins', sans-serif; /* Use Poppins font, fallback to sans-serif */
-    padding-top: 56px; /* Add padding to top of body to offset sticky navbar */
+    font-family: 'Poppins', sans-serif;
+    background-image: url("images/backgrounds/blank-blue-notepaper-design-vector/v602-nunoon-06-rippednotes.jpg");
+    /* Remove padding-top: 56px; from here */
 }
 
-main {
-    background-color: #0FA4AF;
+/* Adjust scroll-padding for the potentially taller sticky header */
+html {
+  /* Increase this value to match the actual height of your sticky header */
+  /* You might need to inspect the element in your browser tools to find the exact height */
+  scroll-padding-top: 250px; /* Adjust this value as needed */
 }
-/* Header Styles */
+
+/* Style the sticky header container */
+header.sticky-top {
+    /* bg-white is added in HTML, but you could force it here too */
+    /* background-color: #ffffff; */
+    z-index: 1030; /* Ensure it stays above other content (Bootstrap's default for sticky) */
+}
+
+/* Adjust title margin if needed within the new header structure */
 header h1 {
-    color: #28a745; /* A green color, similar to Bootstrap's success color */
-    font-weight: 600; /* Bolder title */
-    margin-bottom: 0.5rem;
+    color: #20b9dc;
+    font-weight: 600;
+    margin-bottom: 0.25rem; /* Slightly reduced margin */
 }
 
+/* Adjust slogan style if needed */
 header .lead {
-    font-size: 0.9rem;
-    color: #6c757d; /* Bootstrap's muted color */
-    margin-bottom: 1rem;
+    font-size: 0.85rem; /* Slightly smaller slogan */
+    color: #6c757d;
 }
 
-/* Navigation Styles */
+
+/* Keep existing navbar styles, but ensure background is correct */
 .navbar {
-    background-color: #f8f9fa !important; /* Light background for navbar */
-    border-bottom: 1px solid #dee2e6;
+    /* Background is now set on the parent header, remove or adjust here if needed */
+     background-color: #f8f9fa !important; /* Keep light background for nav part */
+     border-bottom: none; /* Remove border, as header has border/shadow */
 }
+
+/* Ensure main content starts below the sticky header */
+main {
+    padding-top: 2rem; /* Add some padding to the top of the main content area */
+}
+
+
+/* Keep other styles (cards, boosters, footer, etc.) as they were */
+/* ... */
 
 .navbar .nav-link {
     color: #495057; /* Dark grey color for links */
@@ -49,7 +75,7 @@ main h2.display-5 {
     color: #343a40; /* Darker heading color */
     font-weight: 600;
     margin-bottom: 2.5rem !important; /* More space below section titles */
-    border-bottom: 2px solid #28a745; /* Green underline */
+    /*border-bottom: 2px solid #28a745; /* Green underline */
     padding-bottom: 0.5rem;
     display: inline-block; /* Make border only as wide as text */
 }
@@ -101,6 +127,12 @@ section {
     border: none !important;
 }
 
+/* #boosters {
+    background-color: #024950;
+}
+#smoothies{
+    background-color: #003135;
+} */
 /* Footer Styles */
 footer {
     background-color: #f8f9fa !important; /* Match navbar background */
