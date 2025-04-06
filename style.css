@@ -1,0 +1,115 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap');
+
+
+body {
+    font-family: 'Raleway', 'Poppins', sans-serif; /* Use Poppins font, fallback to sans-serif */
+    padding-top: 56px; /* Add padding to top of body to offset sticky navbar */
+}
+
+main {
+    background-color: #0FA4AF;
+}
+/* Header Styles */
+header h1 {
+    color: #28a745; /* A green color, similar to Bootstrap's success color */
+    font-weight: 600; /* Bolder title */
+    margin-bottom: 0.5rem;
+}
+
+header .lead {
+    font-size: 0.9rem;
+    color: #6c757d; /* Bootstrap's muted color */
+    margin-bottom: 1rem;
+}
+
+/* Navigation Styles */
+.navbar {
+    background-color: #f8f9fa !important; /* Light background for navbar */
+    border-bottom: 1px solid #dee2e6;
+}
+
+.navbar .nav-link {
+    color: #495057; /* Dark grey color for links */
+    font-weight: 400;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: #28a745; /* Green color on hover/active */
+}
+
+/* Section Heading Styles */
+main h2.display-5 {
+    color: #343a40; /* Darker heading color */
+    font-weight: 600;
+    margin-bottom: 2.5rem !important; /* More space below section titles */
+    border-bottom: 2px solid #28a745; /* Green underline */
+    padding-bottom: 0.5rem;
+    display: inline-block; /* Make border only as wide as text */
+}
+
+/* Center section headings */
+section {
+    text-align: center; /* Center align section content by default */
+    margin-bottom: 4rem !important; /* Increase space between sections */
+}
+
+/* Card Styles */
+.card {
+    border: none; /* Remove default card border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    transition: transform 0.2s ease-in-out; /* Add hover effect */
+    text-align: left; /* Align card text left */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift card slightly on hover */
+}
+
+/* .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}  */
+
+.card-title {
+    color: #343a40;
+    font-weight: 600; /* Bolder card titles */
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    color: #6c757d; /* Muted color for description */
+    font-size: 0.9rem;
+    min-height: 60px; /* Ensure cards have similar text height */
+}
+
+/* Booster List Styles */
+#boosters .list-group-item {
+    background-color: #e9f5ec; /* Light green background */
+    color: #28a745; /* Green text */
+    border-radius: 20px !important; /* Rounded pills */
+    margin: 5px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border: none !important;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #f8f9fa !important; /* Match navbar background */
+    color: #6c757d;
+    padding: 1.5rem 0 !important; /* More padding */
+    font-size: 0.9rem;
+}
+
+/* Add some scroll padding to account for sticky nav */
+html {
+  scroll-padding-top: 70px; /* Adjust based on your navbar height */
+}
