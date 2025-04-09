@@ -7,59 +7,51 @@
 
 /* style.css */
 
-/* Remove body padding-top if it exists */
+
 body {
     font-family: 'Poppins', sans-serif;
     background-image: url("images/backgrounds/blank-blue-notepaper-design-vector/v602-nunoon-06-rippednotes.jpg");
-    /* Remove padding-top: 56px; from here */
+
 }
 
-/* Adjust scroll-padding for the potentially taller sticky header */
+
 html {
-  /* Increase this value to match the actual height of your sticky header */
-  /* You might need to inspect the element in your browser tools to find the exact height */
-  scroll-padding-top: 250px; /* Adjust this value as needed */
+
+  scroll-padding-top: 250px;
 }
 
-/* Style the sticky header container */
 header.sticky-top {
-    /* bg-white is added in HTML, but you could force it here too */
-    /* background-color: #ffffff; */
-    z-index: 1030; /* Ensure it stays above other content (Bootstrap's default for sticky) */
+   
+    z-index: 1030;
 }
 
-/* Adjust title margin if needed within the new header structure */
+
 header h1 {
     color: #20b9dc;
     font-weight: 600;
-    margin-bottom: 0.25rem; /* Slightly reduced margin */
+    margin-bottom: 0.25rem;
 }
 
-/* Adjust slogan style if needed */
 header .lead {
-    font-size: 0.85rem; /* Slightly smaller slogan */
+    font-size: 0.85rem;
     color: #6c757d;
 }
 
 
-/* Keep existing navbar styles, but ensure background is correct */
+
 .navbar {
-    /* Background is now set on the parent header, remove or adjust here if needed */
-     background-color: #f8f9fa !important; /* Keep light background for nav part */
-     border-bottom: none; /* Remove border, as header has border/shadow */
+     background-color: #f8f9fa !important;
+     border-bottom: none;
 }
 
-/* Ensure main content starts below the sticky header */
 main {
-    padding-top: 2rem; /* Add some padding to the top of the main content area */
+    padding-top: 2rem;
 }
 
 
-/* Keep other styles (cards, boosters, footer, etc.) as they were */
-/* ... */
 
 .navbar .nav-link {
-    color: #495057; /* Dark grey color for links */
+    color: #495057;
     font-weight: 400;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -67,35 +59,31 @@ main {
 
 .navbar .nav-link:hover,
 .navbar .nav-link.active {
-    color: #28a745; /* Green color on hover/active */
+    color: #28a745;
 }
 
-/* Section Heading Styles */
 main h2.display-5 {
-    color: #343a40; /* Darker heading color */
+    color: #343a40;
     font-weight: 600;
-    margin-bottom: 2.5rem !important; /* More space below section titles */
-    /*border-bottom: 2px solid #28a745; /* Green underline */
+    margin-bottom: 2.5rem !important;
     padding-bottom: 0.5rem;
-    display: inline-block; /* Make border only as wide as text */
+    display: inline-block;
 }
 
-/* Center section headings */
 section {
-    text-align: center; /* Center align section content by default */
-    margin-bottom: 4rem !important; /* Increase space between sections */
+    text-align: center;
+    margin-bottom: 4rem !important;
 }
 
-/* Card Styles */
 .card {
-    border: none; /* Remove default card border */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Softer shadow */
-    transition: transform 0.2s ease-in-out; /* Add hover effect */
-    text-align: left; /* Align card text left */
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    text-align: left;
 }
 
 .card:hover {
-    transform: translateY(-5px); /* Lift card slightly on hover */
+    transform: translateY(-5px);
 }
 
 /* .card-img-top {
@@ -105,21 +93,21 @@ section {
 
 .card-title {
     color: #343a40;
-    font-weight: 600; /* Bolder card titles */
+    font-weight: 600;
     margin-bottom: 0.5rem;
 }
 
 .card-text {
-    color: #6c757d; /* Muted color for description */
+    color: #6c757d;
     font-size: 0.9rem;
-    min-height: 60px; /* Ensure cards have similar text height */
+    min-height: 60px;
 }
 
 /* Booster List Styles */
 #boosters .list-group-item {
-    background-color: #e9f5ec; /* Light green background */
-    color: #28a745; /* Green text */
-    border-radius: 20px !important; /* Rounded pills */
+    background-color: #e9f5ec;
+    color: #28a745;
+    border-radius: 20px !important;
     margin: 5px;
     font-size: 0.9rem;
     font-weight: 600;
@@ -135,13 +123,13 @@ section {
 } */
 /* Footer Styles */
 footer {
-    background-color: #f8f9fa !important; /* Match navbar background */
+    background-color: #f8f9fa !important;
     color: #6c757d;
-    padding: 1.5rem 0 !important; /* More padding */
+    padding: 1.5rem 0 !important;
     font-size: 0.9rem;
 }
 
-/* Add some scroll padding to account for sticky nav */
+
 html {
-  scroll-padding-top: 70px; /* Adjust based on your navbar height */
+  scroll-padding-top: 70px;
 }
